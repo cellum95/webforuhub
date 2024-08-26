@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 7em 0 0 0;
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #003366; /* Navy Blue */
+    --secondary-color: #e0f7fa; /* Light Blue */
+    --accent-color: #ffd600; /* Yellow */
+    --text-color: #2f4f4f; /* Dark Slate Gray */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+/* Home Section Styling */
+#home {
+    background-color: var(--secondary-color); /* Light Blue */
+    text-align: center;
+    padding: 100px 0;
+}
+
+#home h2, #home p {
+    color: var(--text-color); /* Dark Slate Gray */
+}
+
+/* Categories Section */
+#categories-section {
+    background-color: white;
+    padding: 50px 0;
+}
+
+#categories h3, #resources h3 {
+    color: var(--primary-color); /* Navy Blue */
+}
+
+/* About Section */
+#about {
+    background-color: var(--secondary-color); /* Light Blue */
+    padding: 50px 0;
+}
+
+#about h3, #about p {
+    color: var(--text-color); /* Dark Slate Gray */
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color); /* Navy Blue */
+    color: white;
+    padding: 20px 0;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+footer p {
+    margin: 0;
+    flex: 1; /* Ensure the paragraphs take up equal space */
+    text-align: center;
+}
+
+footer a {
+    color: var(--accent-color);
+}
+
+footer a:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    footer .footer-container {
+        flex-direction: column; /* Stacks content vertically on smaller screens */
+    }
+}
