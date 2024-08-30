@@ -1,29 +1,21 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>WebForU Hub</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WebForU Hub</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
 
-        <link rel="stylesheet" href="./index.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-       <!-- Navbar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top px-5 py-3">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">WebForU Hub</a>
@@ -52,13 +44,41 @@
     <!-- Home Section -->
     <section id="home" class="bg-light">
         <div class="container">
-            <div id="introduction" class="mb-5">
+            <div id="introduction" class="mb-5 text-center">
                 <h2>Welcome to the WebForU Hub</h2>
-                <p>Your one-stop solution for all web development resources</p>
+                <p>Your one-stop solution for all web development resources.</p>
             </div>
-            <div id="featured">
-                <h3>Featured Resources</h3>
-                <p>Check out our featured educational content.</p>
+            <div id="featured" class="mb-5">
+                <h3 class="text-center">Featured Resources</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive Web Design Workshop</h5>
+                                <p class="card-text">A hands-on workshop to master interactive design elements and enhance user engagement.</p>
+                                <a href="#" class="btn btn-primary">Explore Workshop</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Advanced JavaScript Techniques</h5>
+                                <p class="card-text">Deep dive into advanced JavaScript topics to build powerful web applications.</p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Building Responsive Websites</h5>
+                                <p class="card-text">Techniques and tools for creating fully responsive and mobile-friendly websites.</p>
+                                <a href="#" class="btn btn-primary">Start Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -67,9 +87,9 @@
     <section id="categories-section" class="p-5">
         <div class="container">
             <h3 class="mb-4 text-center">Categories</h3>
-            <div class="row">
+            <div id="categories" class="row">
                 <div class="col-md-4">
-                    <div class="card text-center">
+                    <div class="card text-center shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Front-End Web Development</h5>
                             <p class="card-text">Learn HTML, CSS, JavaScript, and more to build modern websites.</p>
@@ -77,18 +97,50 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center">
+                    <div class="card text-center shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Back-End Web Development</h5>
-                            <p class="card-text">Learn NodeJS, ExpressJS, Postman, and more to build REST APIs</p>
+                            <p class="card-text">Learn NodeJS, ExpressJS, Postman, and more to build REST APIs.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card text-center">
+                    <div class="card text-center shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Full Stack Web Development</h5>
                             <p class="card-text">Learn ReactJS to create a fully developed, modern website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="resources" class="text-center mt-4">
+                <h4>Resources</h4>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML & CSS Basics</h5>
+                                <p class="card-text">Fundamentals of HTML and CSS for beginners. Perfect for getting started with web design.</p>
+                                <a href="#" class="btn btn-primary">View Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">JavaScript Essentials</h5>
+                                <p class="card-text">An essential guide to JavaScript for building dynamic web applications.</p>
+                                <a href="#" class="btn btn-primary">Explore Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Intro to ReactJS</h5>
+                                <p class="card-text">Learn the basics of ReactJS, a popular library for building user interfaces.</p>
+                                <a href="#" class="btn btn-primary">Get Started</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,16 +153,16 @@
         <div class="container">
             <h3 class="mb-4 text-center">About Us</h3>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="card text-center">
+                <div class="col-md-6" id="mission">
+                    <div class="card text-center shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Our Mission</h5>
                             <p class="card-text">To provide accessible and high-quality educational resources for everyone.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6" id = "contact">
-                    <div class="card text-center">
+                <div class="col-md-6" id="contact">
+                    <div class="card text-center shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Contact Us</h5>
                             <p class="card-text">Email: info@webforu.com</p>
@@ -123,16 +175,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-3">
-        <div class="container footer-container">
+    <footer class="py-3 bg-dark text-white">
+        <div class="container text-center">
             <p>&copy; 2024 WebForU. All Rights Reserved.</p>
             <p>**This is for Educational Purposes only.</p>
             <p>Follow us on <a href="#" class="text-white text-decoration-none">Social Media</a></p>
         </div>
     </footer>
-        
-        <script src="" async defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
